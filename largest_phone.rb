@@ -5,7 +5,7 @@ array (if multiple numbers are equally large, return the last one).  Assume that
 the phone numbers are strings of 10 digits separated by dashes.
 =end
 
-# First Solution: 
+# First Solution:
 
 def largest(array_of_phones)
   largest_number = " "
@@ -14,11 +14,11 @@ def largest(array_of_phones)
   array_of_phones.each do |phone_number|
     phone_number.gsub!(/-/, "")
     dashless_phones.push(phone_number)
-    end
+  end
 
   dashless_phones.each do |phone_number|
-      temp_sum = 0
-      digits = phone_number.split("")
+    temp_sum = 0
+    digits = phone_number.split("")
 
     digits.each do |digit |
       num = digit.to_i
@@ -37,22 +37,23 @@ def largest(array_of_phones)
 
 end
 
-# Refactored solution: 
+
+# Refactored solution:
 
 def largest(array)
 
-highest_sum = 0
-highest_phone_number = 0
+  highest_sum = 0
+  highest_phone_number = 0
 
-array.each do |phone_number|
+  array.each do |phone_number|
     sum = phone_number.gsub('-', '').split('').map(&:to_i).reduce(&:+)
     if sum >= highest_sum
-        highest_sum = sum
-        highest_phone_number = phone_number
+      highest_sum = sum
+      highest_phone_number = phone_number
     end
-end
+  end
 
-return highest_phone_number
+  return highest_phone_number
 
 end
 

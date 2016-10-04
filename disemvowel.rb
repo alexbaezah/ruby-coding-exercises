@@ -17,9 +17,9 @@ puts(remove_vowels(string))
 # def disemvowel(string)
 #  no_vowels = " "
 # 	 i = 0
-# 	 while i < string.length 
-# 	 	no_vowels += string[i] unless (string[i] == "a"|| string[i] == "e"|| string[i] == "i"|| string[i] == "o"|| string[i] == "u") 
-# 		i += 1   
+# 	 while i < string.length
+# 	 	no_vowels += string[i] unless (string[i] == "a"|| string[i] == "e"|| string[i] == "i"|| string[i] == "o"|| string[i] == "u")
+# 		i += 1
 # 	end
 #  return no_vowels.reverse
 
@@ -28,4 +28,3 @@ puts(remove_vowels(string))
 # puts(disemvowel("foobar"))#=="fbr"
 
 # disemvowel("ruby")#=="rby"
-

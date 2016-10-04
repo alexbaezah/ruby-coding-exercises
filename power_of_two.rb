@@ -5,7 +5,7 @@ def is_power_of_two?(num)
   if num < 1
     return false
   end
-
+  
   while true
     if num == 1
       return true
