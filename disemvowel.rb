@@ -8,7 +8,7 @@ def remove_vowels(str)
   return result
 end
 
-string = "Heaaaallooooo ONOfre"
+string = "Hello ono how are you? Ah?"
 puts(remove_vowels(string))
 
 
