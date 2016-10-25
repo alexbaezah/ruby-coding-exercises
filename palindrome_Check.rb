@@ -9,7 +9,6 @@ def is_palindrome(string)
     if string[i] != string[(string.length - 1) - i]
       return false
     end
-
     i += 1
   end
 
