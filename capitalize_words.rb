@@ -3,13 +3,15 @@
 # each word.
 
 def capitalize_words(string)
-  words = string.split(" ")
+  words = string.split(' ')
   idx = 0
   while idx < words.length
     word = words[idx]
     word[0] = word[0].upcase
     idx += 1
   end
-
-  return words.join(" ")
+  puts words.join(' ')
 end
+
+capitalize_words('onofre echeverria huerta')
+# Onofre Echeverria Huerta

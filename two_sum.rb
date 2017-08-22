@@ -7,13 +7,11 @@ def two_sum(nums)
   while idx1 < nums.length
     idx2 = idx1 + 1
     while idx2 < nums.length
-      if nums[idx1] + nums[idx2] == 0
-        return [idx1, idx2]
-      end
+      return [idx1, idx2] if (nums[idx1] + nums[idx2]).zero?
       idx2 += 1
     end
     idx1 += 1
   end
 
-  return nil
+  nil
 end

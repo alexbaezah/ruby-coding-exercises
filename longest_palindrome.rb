@@ -35,5 +35,3 @@ def longest_palindrome(string)
 
   return best_palindrome
 end
-
-

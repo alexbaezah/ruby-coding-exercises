@@ -3,12 +3,12 @@
 # string in the order specified by the indices of the array of indices.
 
 def scramble_string(string, positions)
-  result = ""
+  result = ''
   i = 0
   while i < positions.length
-    result = result + string[positions[i]]
+    result += string[positions[i]]
     i += 1
   end
 
-  return result
+  result
 end

@@ -4,17 +4,12 @@
 # More generally, if `m` and `n` are integers, `m % n == 0` if and only
 # if `n` divides `m` evenly.
 
-
 def is_prime?(number)
-  if number <= 1
-    return false
-  end
+  return false if number <= 1
   idx = 2
   while idx < number
-    if (number % idx) == 0
-      return false
-    end
+    return false if (number % idx).zero?
     idx += 1
   end
-  return true
+  true
 end

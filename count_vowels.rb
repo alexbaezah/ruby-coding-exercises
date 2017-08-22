@@ -3,14 +3,7 @@
 # You can treat "y" as a consonant.
 
 def count_vowels(string)
-  num_vowels = 0
-  i = 0
-  while i < string.length
-    if (string[i] == "a" || string[i] == "e" || string[i] == "i" || string[i] == "o" || string[i] == "u")
-      num_vowels += 1
-    end
-    i += 1
-  end
-
-  return num_vowels
+  puts string.downcase.scan(/[aeoui]/).count
 end
+
+count_vowels('HEllo frIend')

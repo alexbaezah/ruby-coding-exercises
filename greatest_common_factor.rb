@@ -10,7 +10,7 @@ def greatest_common_factor(number1, number2)
     i = number2
   end
   while true
-    if (number1 % i == 0) && (number2 % i == 0)
+    if (number1 % i).zero? && (number2 % i).zero?
       return i
     end
     i -= 1
